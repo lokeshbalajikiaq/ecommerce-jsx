@@ -153,7 +153,8 @@ function Signup() {
                                     />
                                     <div className="invalid-feedback"> {errorData.lastName} </div>
                                 </div>
-                                
+
+                            </div>
 
                                 <div className="mb-3">
                                     <label htmlFor="email" className="form-label"> Email Address </label>
@@ -224,7 +225,6 @@ function Signup() {
                                         </Link>
                                     </p>
                                 </div>
-                            </div>
                         </form>
                     </div>
                 </div>
