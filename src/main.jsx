@@ -9,6 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Signup from './auth/Signup.jsx'
 import Login from './auth/Login.jsx'
 import CreateProduct from './products/CreateProduct.jsx'
+import ProductList from './products/ProductList.jsx'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/register" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/addProduct" element={<CreateProduct />} />
+      <Route path="/products" element = {<ProductList/> } />
     </Routes>
   </BrowserRouter>
 )
