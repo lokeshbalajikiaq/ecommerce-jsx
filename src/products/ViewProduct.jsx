@@ -46,6 +46,10 @@ function ViewProduct() {
                             <p class="card-text"> { product.description } </p>
                             
                             <p className="card-text fw-semibold"> Product Price : { product.price } </p>
+
+                            <div>
+                                <button href="" className="btn btn-success btn-lg w-100"> Add To Cart </button>
+                            </div>
                             
                         </div>
                     </div>
