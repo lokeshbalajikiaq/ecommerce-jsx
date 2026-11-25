@@ -7,6 +7,10 @@ function ViewProduct() {
     // To get data from Path Variable
     const [productId, setProductId] = useState(useParams().id);
 
+    // const {id} = useParams();
+
+    // const [productId, setProductId] = useState(id);
+
     const [product, setProduct] = useState({});
 
     useEffect(() => {
