@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 function ViewProduct() {
@@ -12,6 +12,8 @@ function ViewProduct() {
     // const [productId, setProductId] = useState(id);
 
     const [product, setProduct] = useState({});
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         getSingleProduct();
@@ -30,6 +32,9 @@ function ViewProduct() {
 
     }
 
+    const handleEditProduct = () => {
+        navigate(`/editProduct/${productId}`)
+    };
 
     return (
         <div className="container py-5">
@@ -51,8 +56,14 @@ function ViewProduct() {
                             
                             <p className="card-text fw-semibold"> Product Price : { product.price } </p>
 
-                            <div>
+                            <div className="d-grid gap-2">
                                 <button href="#" className="btn btn-success btn-lg w-100"> Add To Cart </button>
+
+                                <button className="btn btn-success btn-lg w-100"
+                                    onClick={handleEditProduct}
+                                > 
+                                Edit Product </button>
+                                
                             </div>
                             
                         </div>
