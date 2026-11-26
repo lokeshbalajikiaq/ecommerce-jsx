@@ -25,6 +25,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/addProduct" element={<CreateProduct />} />
       <Route path="/products" element = {<ProductList/> } />
       <Route path="/viewProduct/:id" element = {<ViewProduct />} />
+      <Route path="/editProduct/:id" element = {<CreateProduct />} />
     </Routes>
   </BrowserRouter>
 )
